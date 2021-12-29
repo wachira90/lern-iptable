@@ -1,4 +1,20 @@
-	
+
+## This is an Example of setting iptables on the Server below.
+````
+                      Internet
+                          |
+                    +----------+
+--------------------|  Router  |----------------------
+                    +----------+
+                          |
+                  LAN(10.0.0.0/24)
++----------+              |               +----------+
+|          |              |     10.0.0.100|          |
+|    PC    |------------------------------|  Server  |
+|          |                          eth0|          |
++----------+                              +----------+
+````
+
 * DROP INPUT by Default
 * ACCEPT OUTPUT by Default
 * ACCEPT Established Connection
